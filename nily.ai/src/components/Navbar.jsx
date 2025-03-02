@@ -1,28 +1,23 @@
 import { useEffect, useState } from "react";
 import Panel from "./panel";
+import { useContext } from "react";
+import { Context } from "../context/context.js";
 
 const Navbar = () => {
-    const [flag, setFlag] = useState(false);
-  const panel = () => {
-    return(<div className="gird grid-cols-4 bg-slate-400 fixed w-20 h-20">
-      klafjdjfa
-    </div>)
-  };
+    const {setFlag, flag} = useContext(Context)
   return (
     <div className="grid grid-cols-6 bg-stone-50 py-2 px-8 fixed w-full m-0 shadow-md text-slate-800">
       <div className="flex justify-start items-center col-span-1">
         <a className="text-orange-500 font-bold text-2xl">Nily AI</a>
       </div>
-      {flag? <Panel/> : null}
-      <div
-        className="flex justify-center items-center col-span-3"
-        onMouseEnter={() => 
-            {
-                setFlag(true);
-            }
-        }
-      >
-        <div className="flex mr-4 ml-6 hover:text-orange-500">
+      {flag ? <Panel/> : null}
+      <div className="flex justify-center items-center col-span-3">
+        <div
+          className="flex mr-4 ml-6 hover:text-orange-500"
+          onMouseEnter={() => {
+            setFlag(true);
+          }}
+        >
           <a href="#" className="mr-1 hover:text-orange-500">
             Products
           </a>
@@ -33,12 +28,12 @@ const Navbar = () => {
             strokeWidth="1.5"
             stroke="currentColor"
             className="size-4 mt-1.5"
-            >
+          >
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
               d="m19.5 8.25-7.5 7.5-7.5-7.5"
-              />
+            />
           </svg>
         </div>
         <a href="#" className="mx-4 hover:text-orange-500">
