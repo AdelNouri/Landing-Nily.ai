@@ -6,14 +6,14 @@ const Panel = () => {
 
   return (
     <div
-      className="grid grid-cols-4 bg-slate-200 fixed mt-13 w-9/12 h-70 text-slate-500 pt-5 shadow-2xl rounded-lg"
+      className="grid grid-cols-4 bg-slate-200 fixed mt-13 w-9/12 h-64 text-slate-500 pt-5 shadow-2xl rounded-lg"
       onMouseLeave={() => setFlag(false)}
     >
       <div className="pl-8 pr-8">
         <div className="flex justify-start">
           <p className="text-2xl text-slate-900">Apps</p>
         </div>
-        <div className="flex bg-slate-100 mb-4 mt-5 rounded-lg px-5 py-3 hover:scale-106 transition duration-350">
+        <div className="flex bg-slate-100 mb-3 mt-4 rounded-lg px-5 py-3 hover:scale-106 transition duration-350">
           <div className="flex items-center">
             <svg
               class="h-6 w-6 text-gray-900"
@@ -56,7 +56,7 @@ const Panel = () => {
             </svg>
           </div>
         </div>
-        <div className="flex bg-slate-100 mb-4 mt-5 rounded-lg px-5 py-3 hover:scale-106 transition duration-350">
+        <div className="flex bg-slate-100 mb-3 rounded-lg px-5 py-3 hover:scale-106 transition duration-350">
         <div className="flex items-center">
             
           <svg

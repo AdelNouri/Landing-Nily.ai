@@ -7,10 +7,11 @@ const Navbar = () => {
   const { setFlag, flag } = useContext(Context);
   return (
     <>
-    <div className=" bg-stone-50  px-8 fixed w-12/12 m-0 shadow-md text-slate-700">
-      <div className="flex justify-between py-2 mx-44">
-        <div className="flex justify-start items-center">
-          <a className="text-orange-500 font-bold text-2xl">Nily AI</a>
+    <div className=" bg-stone-50  pl-7 pr-5 fixed w-12/12 m-0 shadow-md text-slate-700">
+      <div className="flex justify-between py-4 ml-44 mr-40">
+        <div className="flex justify-start items-center ">
+          <img src="../../public/assets/icon.png" alt="icon" className="w-11"/>
+          <a className="text-orange-500 font-bold ml-1 text-2xl">Nily AI</a>
         </div>
         <div className="flex justify-center items-center">
           <div
@@ -47,12 +48,12 @@ const Navbar = () => {
             Blog
           </a>
         </div>
-        <div className="flex justify-end items-center py-2">
-          <h3 className="border border-orange-500 rounded-full py-2 px-10 font-bold mr-4 hover:border-2 transition ease-out duration-400">
+        <div className="flex justify-end items-center">
+          <h3 className="flex justify-center items-center border border-orange-500 rounded-full h-10 w-32 font-bold mr-4 hover:border-2 transition ease-out duration-400">
             Login
           </h3>
 
-          <h3 className="bg-orange-500 text-orange-50 rounded-full py-2.5 px-6 font-bold hover:bg-slate-800 transition ease-out duration-400">
+          <h3 className="flex items-center bg-orange-500 text-orange-50 rounded-full py-2 px-6 font-bold hover:bg-slate-800 transition ease-out duration-400">
             Get Strarted
           </h3>
         </div>
