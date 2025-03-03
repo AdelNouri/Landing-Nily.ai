@@ -1,6 +1,7 @@
-import { useState } from 'react'
-import './App.css'
-import Navbar from './components/Navbar'
+import { useState } from "react";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Panel from "./components/Panel";
 import { Context } from "./context/context";
 
 function App() {
@@ -13,9 +14,11 @@ function App() {
         setFlag
       }}
     >
-      <Navbar/>
+      <div className="flex justify-center w-full">
+      <Navbar />
+      </div>
     </Context.Provider>
-  )
+  );
 }
 
-export default App
+export default App;
