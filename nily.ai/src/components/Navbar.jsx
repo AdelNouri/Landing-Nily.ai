@@ -8,14 +8,14 @@ const Navbar = () => {
   return (
     <>
     <div className=" bg-white  pl-7 pr-5 fixed w-12/12 shadow-md text-slate-700">
-      <div className="flex justify-between py-5 ml-44 mr-24">
+      <div className="flex justify-between py-4.5 ml-44 mr-24">
         <div className="flex justify-start items-center ">
           <img src="../../public/assets/icon.png" alt="icon" className="w-11"/>
           <a className="text-orange-500 font-bold ml-1 text-2xl">Nily AI</a>
         </div>
         <div className="flex justify-center items-center">
           <div
-            className="flex mr-4 ml-8 hover:text-orange-500"
+            className="flex mr-4 ml-11 hover:text-orange-500"
             onMouseEnter={() => {
               setFlag(true);
             }}
@@ -49,7 +49,7 @@ const Navbar = () => {
           </a>
         </div>
         <div className="flex justify-end items-center">
-          <h3 className="flex justify-center items-center border border-orange-500 rounded-full h-10 w-32 font-bold mr-4 hover:border-2 transition ease-out duration-400">
+          <h3 className="flex justify-center items-center border border-orange-500 rounded-full h-10 w-32 font-bold mr-4 hover:border-2 transition duration-400">
             Login
           </h3>
 
