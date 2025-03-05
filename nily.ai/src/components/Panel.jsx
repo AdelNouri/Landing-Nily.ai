@@ -39,7 +39,7 @@ const Panel = () => {
               <p>Supports Chrome</p>
             </div>
           </div>
-          <div className="flex items-center ml-17">
+          <div className="flex items-center ml-16">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -81,7 +81,7 @@ const Panel = () => {
               <p>Open in Browser</p>
             </div>
           </div>
-          <div className="flex items-center ml-20">
+          <div className="flex items-center ml-18">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

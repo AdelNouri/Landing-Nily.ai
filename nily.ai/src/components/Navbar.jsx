@@ -7,8 +7,8 @@ const Navbar = () => {
   const { setFlag, flag } = useContext(Context);
   return (
     <>
-    <div className=" bg-stone-50  pl-7 pr-5 fixed w-12/12 m-0 shadow-md text-slate-700">
-      <div className="flex justify-between py-4 ml-44 mr-40">
+    <div className=" bg-white  pl-7 pr-5 fixed w-12/12 shadow-md text-slate-700">
+      <div className="flex justify-between py-5 ml-44 mr-24">
         <div className="flex justify-start items-center ">
           <img src="../../public/assets/icon.png" alt="icon" className="w-11"/>
           <a className="text-orange-500 font-bold ml-1 text-2xl">Nily AI</a>
@@ -58,7 +58,6 @@ const Navbar = () => {
           </h3>
         </div>
       </div>
-
     </div>
       {flag ? <Panel /> : null}
       </>
