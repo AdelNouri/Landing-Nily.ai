@@ -34,7 +34,7 @@ const Body = () => {
               </p>
               <p className="text-xl mt-7.5">Anytime, Anywhere!</p>
             </div>
-            <div className="flex justify-center items-center pb-22.5 mt-14.5 h-10">
+            <div className="flex justify-center items-center pb-21 mt-14.5 h-10">
               <div className="text-white bg-orange-500 py-3.5 w-35.5 rounded-full mr-4.25 hover:bg-slate-800 transition ease-out duration-400">
                 <button>Get Started</button>
               </div>
@@ -57,19 +57,20 @@ const Body = () => {
                 <button>Download Extension</button>
               </div>
             </div>
-            <div className="flex justify-center bg-[#EDF1FB]">
+            <div className="flex justify-center bg-[#EDF1FB] rounded-lg">
               <video
                 autoPlay
                 loop
                 muted
-                className="w-288 shadow-2xl rounded-lg"
+                className="w-288 shadow-2xl mt-1.5 rounded-lg hover:mt-0 transform ease-in-out duration-300"
               >
                 <source
                   src="../../public/assets/video/landing-desktop.mp4"
                   type="video/mp4"
                 />
               </video>
-              <div className="w-96 h-[647px] overflow-hidden absolute ml-212 mt-8 rounded-lg shadow-2xl">
+
+              <div className="w-96 h-[647px] overflow-hidden absolute ml-212 mt-9.5 rounded-lg shadow-2xl hover:mt-7 transform ease-in-out duration-300">
                 <video
                   className="w-full h-full object-cover object-[100%_0%]"
                   autoPlay
@@ -127,7 +128,7 @@ const Body = () => {
                   Industry standard<br />security
                 </p>
               </div>
-              <div className="mx-8">
+              <div className="mx-7.5">
                 <div className="flex justify-center">
                   <img
                     src="../../public/assets/icons/google-store.png"
