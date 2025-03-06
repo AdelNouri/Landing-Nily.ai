@@ -5,8 +5,8 @@ module.exports = {
     ],
     theme: {
       extend: {
-        backgroundImage: {
-            'radial-fade': "radial-gradient(circle, rgba(0,0,0,0) 20%, rgba(0,0,0,0.8) 60%, rgba(0,0,0,1) 90%)",
+        background: {
+            'radial-fade': "radial-gradient(circle, rgba(237, 241, 251,0.2) 20%, rgba(237, 241, 251,0.7) 50%, rgba(237, 241, 251,1) 8%)",
           }
       },
     },

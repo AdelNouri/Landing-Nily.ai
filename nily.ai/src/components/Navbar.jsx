@@ -13,7 +13,7 @@ const Navbar = () => {
           <img src="../../public/assets/icon.png" alt="icon" className="w-11"/>
           <a className="text-orange-500 font-bold ml-1 text-2xl">Nily AI</a>
         </div>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center ml-5">
           <div
             className="flex mr-4 ml-11 hover:text-orange-500"
             onMouseEnter={() => {
@@ -53,7 +53,7 @@ const Navbar = () => {
             Login
           </h3>
 
-          <h3 className="flex items-center bg-orange-500 text-orange-50 rounded-full py-2 px-6 font-bold hover:bg-slate-800 transition ease-out duration-400">
+          <h3 className="flex items-center bg-orange-500 text-white rounded-full py-2 px-6 font-bold hover:bg-slate-800 transition ease-out duration-400">
             Get Strarted
           </h3>
         </div>
