@@ -95,7 +95,7 @@ const Body = () => {
                 </div>
                 <div className="flex justify-center items-center">
                   <p className="font-bold text-black text-3xl">4.5</p>
-                  <i class="fas fa-star text-lg text-orange-500 ml-1.75" />
+                  <i className="fas fa-star text-lg text-orange-500 ml-1.75" />
                 </div>
                 <p className="text-gray-600 text-md mt-2">On G2</p>
               </div>
@@ -109,7 +109,7 @@ const Body = () => {
                 </div>
                 <div className="flex justify-center items-center">
                   <p className="font-bold text-black text-3xl">3.9</p>
-                  <i class="fas fa-star text-lg text-orange-500 ml-1.75" />
+                  <i className="fas fa-star text-lg text-orange-500 ml-1.75" />
                 </div>
                 <p className="text-gray-600 text-md mt-2">On Trustpilot</p>
               </div>
@@ -138,7 +138,7 @@ const Body = () => {
                 </div>
                 <div className="flex justify-center items-center">
                   <p className="font-bold text-black text-3xl">4.9</p>
-                  <i class="fas fa-star text-lg text-orange-500 ml-1.75" />
+                  <i className="fas fa-star text-lg text-orange-500 ml-1.75" />
                 </div>
                 <p className="text-gray-600 text-md mt-2">On Chrome Store</p>
               </div>
@@ -152,7 +152,7 @@ const Body = () => {
                 </div>
                 <div className="flex justify-center items-center">
                   <p className="font-bold text-black text-3xl">4.0</p>
-                  <i class="fas fa-star text-lg text-orange-500 ml-1.75" />
+                  <i className="fas fa-star text-lg text-orange-500 ml-1.75" />
                 </div>
                 <p className="text-gray-600 text-md mt-2">On Capterra</p>
               </div>

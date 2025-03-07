@@ -2,12 +2,12 @@ import { useContext } from "react";
 import { Context } from "../context/context.js";
 
 const Panel = () => {
-  const { setFlag, flag } = useContext(Context);
+  const { setPanel } = useContext(Context);
 
   return (
     <div
       className="grid grid-cols-4 bg-slate-200 fixed mt-13 w-9/12 h-64 text-slate-500 pt-5 shadow-2xl rounded-lg"
-      onMouseLeave={() => setFlag(false)}
+      onMouseLeave={() => setPanel(false)}
     >
       <div className="pl-8 pr-8">
         <div className="flex justify-start">
@@ -20,9 +20,9 @@ const Panel = () => {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
               {" "}<circle cx="12" cy="12" r="10" />{" "}
               <circle cx="12" cy="12" r="4" />{" "}
@@ -44,13 +44,13 @@ const Panel = () => {
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="3"
+              strokeWidth="3"
               stroke="currentColor"
               className="size-4 text-gray-900"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 d="m8.25 4.5 7.5 7.5-7.5 7.5"
               />
             </svg>
@@ -66,9 +66,9 @@ const Panel = () => {
             stroke="currentColor"
           >
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
             />
           </svg>
@@ -86,13 +86,13 @@ const Panel = () => {
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            stroke-width="3"
+            strokeWidth="3"
             stroke="currentColor"
             className="size-4 text-gray-900"
           >
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               d="m8.25 4.5 7.5 7.5-7.5 7.5"
             />
           </svg>
