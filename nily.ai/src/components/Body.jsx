@@ -135,13 +135,13 @@ const Body = () => {
             </div>
             <div className="pt-30 pb-16 bg-[#EDF1FB]">
               <motion.div
-                initial={{ opacity: 0, y: 50 }}
+                initial={{ opacity: 0, y: 60 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                viewport={{ once: true, amount: 0.3 }}
-                className="flex justify-center items-center"
+                transition={{ duration: 0.3 }}
+                viewport={{ once: true, amount: 0.2 }}
+                className="grid grid-cols-2 md:flex md:justify-center md:items-center"
               >
-                <div className="mx-11">
+                <div className="mx-5 pt-3 lg:mx-11">
                   <div className="flex justify-center">
                     <img
                       src="../../public/assets/icons/pngwing.com.png"
@@ -155,7 +155,7 @@ const Body = () => {
                   </div>
                   <p className="text-gray-600 text-md mt-2">On G2</p>
                 </div>
-                <div className="mx-11">
+                <div className="mx-5 lg:mt-0 lg:mx-11">
                   <div className="flex justify-center">
                     <img
                       src="../../public/assets/icons/Trustpilot.png"
@@ -169,7 +169,7 @@ const Body = () => {
                   </div>
                   <p className="text-gray-600 text-md mt-2">On Trustpilot</p>
                 </div>
-                <div className="mx-10">
+                <div className="mx-4 mt-8 lg:mt-0 lg:mx-10">
                   <div className="flex justify-center">
                     <img
                       src="../../public/assets/icons/soc.webp"
@@ -177,14 +177,14 @@ const Body = () => {
                       className="w-12"
                     />
                   </div>
-                  <p className="text-xl text-black">
+                  <p className="text-xl font-semibold text-slate-900">
                     Trusted by<br />Experts
                   </p>
                   <p className="text-gray-600 text-sm">
                     Industry standard<br />security
                   </p>
                 </div>
-                <div className="mx-7.5">
+                <div className="mx-2.5 mt-5 lg:mt-0 lg:mx-7.5">
                   <div className="flex justify-center">
                     <img
                       src="../../public/assets/icons/google-store.png"
@@ -198,7 +198,7 @@ const Body = () => {
                   </div>
                   <p className="text-gray-600 text-md mt-2">On Chrome Store</p>
                 </div>
-                <div className="mx-11">
+                <div className="mx-5 mt-6 lg:mt-0 lg:mx-11">
                   <div className="flex justify-center">
                     <img
                       src="../../public/assets/icons/capterra.png"
@@ -215,6 +215,7 @@ const Body = () => {
               </motion.div>
             </div>
             {/* section 2 */}
+            <div className="h-100 bg-amber-300"></div>
           </div>
         </div>
       </div>
