@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar";
 import Body from "./components/Body";
 
 function App() {
-  const [panel, setPanel] = useState(true);
+  const [panel, setPanel] = useState(false);
   const [menu, setMenu] = useState(false);
 
   return (

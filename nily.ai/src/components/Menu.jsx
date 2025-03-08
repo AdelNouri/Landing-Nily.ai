@@ -7,7 +7,7 @@ const Menu = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.2 }}
                 viewport={{ once: true, amount: 0.2 }}
-                className="h-12/12 w-12/12 fixed mt-18.75 bg-[#F4F1ED]"
+                className="h-12/12 w-12/12 fixed mt-18.75 bg-[#F4F1ED] md:hidden"
               >
         <div className="text-gray-500 pl-10 pt-9">
             <p className="text-amber-600 text-lg font-semibold flex items-start mb-2">Products</p>

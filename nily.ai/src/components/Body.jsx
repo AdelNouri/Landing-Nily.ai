@@ -40,7 +40,7 @@ const Body = () => {
                 </div>
               </motion.div>
             </div>
-            <div className="text-6xl text-gray-800 block mt-13.5">
+            <div className="text-4xl md:text-5xl lg:text-6xl text-gray-800 block mt-13.5">
               <motion.div
                 initial={{ opacity: 0, y: 25 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -65,7 +65,7 @@ const Body = () => {
                 transition={{ duration: 0.6, delay: 0.3 }}
                 viewport={{ once: true, amount: 0.2 }}
               >
-                <p className="text-xl mt-7.5">Anytime, Anywhere!</p>
+                <p className="text-base md:text-lg lg:text-xl mt-7.5">Anytime, Anywhere!</p>
               </motion.div>
             </div>
             <motion.div
@@ -73,12 +73,13 @@ const Body = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true, amount: 0.2 }}
+              className="flex justify-center"
             >
-              <div className="flex justify-center items-center pb-21 mt-14.5 h-10">
-                <div className="text-white bg-[#FC6423] py-3.5 w-35.5 rounded-full mr-4.25 hover:bg-slate-800 transition ease-out duration-400">
+              <div className="sm:flex justify-center items-center pb-44 sm:pb-21 mt-8 sm:mt-14.5 h-10">
+                <div className="inline-block text-white bg-[#FC6423] py-3.5 w-35.5 rounded-full sm:mr-4.25 hover:bg-slate-800 transition ease-out duration-400">
                   <button>Get Started</button>
                 </div>
-                <div className="bg-white flex justify-center items-center border-2 border-gray-100 text-gray-800 py-3 w-60 rounded-full hover:border-orange-500 hover:border-2 transition-colors duration-400">
+                <div className="mt-3 sm:mt-0 bg-white flex justify-center items-center border-2 border-gray-100 text-gray-800 py-3 w-60 rounded-full hover:border-orange-500 hover:border-2 transition-colors duration-400">
                   <svg
                     className="h-5 w-5 mr-2 text-gray-800"
                     viewBox="0 0 24 24"
@@ -110,27 +111,26 @@ const Body = () => {
                   autoPlay
                   loop
                   muted
-                  className="w-288 shadow-2xl mt-1.5 rounded-lg hover:mt-0 hover:mb-1.5 transform ease-in-out duration-300"
+                  className="w-11/12 md:w-170 lg:w-230 xl:w-288 shadow-2xl mt-2 rounded-lg hover:mt-0 hover:mb-2 transform ease-in-out duration-300"
                 >
                   <source
                     src="../../public/assets/video/landing-desktop.mp4"
                     type="video/mp4"
                   />
                 </video>
-
-                {/* <div className="w-96 h-[647px] overflow-hidden absolute ml-212 mt-9.5 rounded-lg shadow-2xl hover:mt-7 transform ease-in-out duration-300">
-                  <video
-                    className="w-full h-full object-cover object-[100%_0%]"
-                    autoPlay
-                    loop
-                    muted
-                  >
-                    <source
-                      src="../../public/assets/video/landing-sidebar.mp4"
-                      type="video/mp4"
-                    />
-                  </video>
-                </div> */}
+                <div className="hidden md:block absolute rounded-lg shadow-2xl w-60 h-[385px] ml-125 mt-8.5 lg:w-80 lg:h-[520px] lg:ml-170 lg:mt-10 xl:w-96 xl:h-[647px] xl:ml-212 xl:mt-9.5 hover:mt-7 overflow-hidden transform ease-in-out duration-300">
+                   <video
+                     className="w-full h-full object-cover object-[100%_0%]"
+                     autoPlay
+                     loop
+                     muted
+                   >
+                     <source
+                       src="../../public/assets/video/landing-sidebar.mp4"
+                       type="video/mp4"
+                     />
+                   </video>
+                 </div>
               </motion.div>
             </div>
             <div className="pt-30 pb-16 bg-[#EDF1FB]">

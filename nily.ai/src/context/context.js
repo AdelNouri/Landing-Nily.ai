@@ -1,7 +1,7 @@
 import { createContext } from "react";
 
 export const Context = createContext({
-    panel: true,
+    panel: false,
     setPanel: () => {},
     menu: false,
     setMenu: () => {}
