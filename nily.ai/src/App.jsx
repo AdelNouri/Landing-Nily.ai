@@ -3,16 +3,20 @@ import "./App.css";
 import { Context } from "./context/context";
 
 import Navbar from "./components/Navbar";
+
 import Body from "./components/Body";
 
 function App() {
-  const [panel, setPanel] = useState(false);
+  const [panel, setPanel] = useState(true);
+  const [menu, setMenu] = useState(false);
 
   return (
     <Context.Provider
       value={{
         panel,
-        setPanel
+        setPanel,
+        menu,
+        setMenu
       }}
     >
       <div className="flex justify-center w-full">
