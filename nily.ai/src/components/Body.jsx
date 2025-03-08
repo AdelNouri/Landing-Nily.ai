@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const Body = () => {
   return (
     <div className="w-full">
@@ -12,57 +14,100 @@ const Body = () => {
             }}
           >
             <div className="flex justify-center">
-              <div className="text-gray-900 flex justify-center items-center w-54 cursor-pointer bg-white rounded-full shadow-md h-10 mt-19 hover:shadow-lg transition duration-200">
-                <svg
-                  className="h-4 w-4 text-gray-900 mr-1.75"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  {" "}<polygon points="5 3 19 12 5 21 5 3" />
-                </svg>
-                <p className="text-md">View Instruction Video</p>
-              </div>
+              <motion.div
+                initial={{ opacity: 0, y: 25 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay:0 }}
+                viewport={{ once: true, amount: 0.2 }}
+              >
+                <div className="text-gray-900 flex justify-center items-center w-54 cursor-pointer bg-white rounded-full shadow-md h-10 mt-19 hover:shadow-lg transition duration-200">
+                  <svg
+                    className="h-4 w-4 text-gray-900 mr-1.75"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    {" "}<polygon points="5 3 19 12 5 21 5 3" />
+                  </svg>
+                  <p className="text-md">View Instruction Video</p>
+                </div>
+              </motion.div>
             </div>
             <div className="text-6xl text-gray-800 block mt-13.5">
-              <p className="font-bold">One AI Assistant to Rule Them All!</p>
-              <p className="text-orange-500 mt-5 font-bold">
-                Your All-in-one AI Assistant
-              </p>
-              <p className="text-xl mt-7.5">Anytime, Anywhere!</p>
+            
+                <motion.div
+                initial={{ opacity: 0, y: 25 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay:0.1  }}
+                viewport={{ once: true, amount: 0.2 }}
+              >
+                <p className="font-bold">One AI Assistant to Rule Them All!</p>
+                </motion.div>
+                <motion.div
+                initial={{ opacity: 0, y: 25 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay:0.2   }}
+                viewport={{ once: true, amount: 0.2 }}
+              >
+                <p className="text-orange-500 mt-5 font-bold">
+                  Your All-in-one AI Assistant
+                </p>
+                </motion.div>
+                <motion.div
+                initial={{ opacity: 0, y: 25 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay:0.3   }}
+                viewport={{ once: true, amount: 0.2 }}
+              >
+                <p className="text-xl mt-7.5">Anytime, Anywhere!</p>
+                </motion.div>
             </div>
+              <motion.div
+                initial={{ opacity: 0, y: 25 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay:0.4   }}
+                viewport={{ once: true, amount: 0.2 }}
+              >
             <div className="flex justify-center items-center pb-21 mt-14.5 h-10">
-              <div className="text-white bg-orange-500 py-3.5 w-35.5 rounded-full mr-4.25 hover:bg-slate-800 transition ease-out duration-400">
-                <button>Get Started</button>
-              </div>
-              <div className="bg-white flex justify-center items-center border-2 border-gray-100 text-gray-800 py-3 w-60 rounded-full hover:border-orange-500 hover:border-2 transition-colors duration-400">
-                <svg
-                  className="h-5 w-5 mr-2 text-gray-800"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  {" "}<circle cx="12" cy="12" r="10" />{" "}
-                  <circle cx="12" cy="12" r="4" />{" "}
-                  <line x1="21.17" y1="8" x2="12" y2="8" />{" "}
-                  <line x1="3.95" y1="6.06" x2="8.54" y2="14" />{" "}
-                  <line x1="10.88" y1="21.94" x2="15.46" y2="14" />
-                </svg>
-                <button>Download Extension</button>
-              </div>
+                <div className="text-white bg-orange-500 py-3.5 w-35.5 rounded-full mr-4.25 hover:bg-slate-800 transition ease-out duration-400">
+                  <button>Get Started</button>
+                </div>
+                <div className="bg-white flex justify-center items-center border-2 border-gray-100 text-gray-800 py-3 w-60 rounded-full hover:border-orange-500 hover:border-2 transition-colors duration-400">
+                  <svg
+                    className="h-5 w-5 mr-2 text-gray-800"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    {" "}<circle cx="12" cy="12" r="10" />{" "}
+                    <circle cx="12" cy="12" r="4" />{" "}
+                    <line x1="21.17" y1="8" x2="12" y2="8" />{" "}
+                    <line x1="3.95" y1="6.06" x2="8.54" y2="14" />{" "}
+                    <line x1="10.88" y1="21.94" x2="15.46" y2="14" />
+                  </svg>
+                  <button>Download Extension</button>
+                </div>
             </div>
-            <div className="flex justify-center bg-[#EDF1FB] rounded-lg">
+              </motion.div>
+            <div className="bg-[#EDF1FB]">
+              <motion.div
+                initial={{ opacity: 0, y: 25 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay:0.5   }}
+                viewport={{ once: true, amount: 0.2 }}
+                className="flex justify-center rounded-lg"
+              >
               <video
                 autoPlay
                 loop
                 muted
-                className="w-288 shadow-2xl mt-1.5 rounded-lg hover:mt-0 transform ease-in-out duration-300"
+                className="w-288 shadow-2xl mt-1.5 rounded-lg hover:mt-0 hover:mb-1.5 transform ease-in-out duration-300"
               >
                 <source
                   src="../../public/assets/video/landing-desktop.mp4"
@@ -83,8 +128,17 @@ const Body = () => {
                   />
                 </video>
               </div>
+            </motion.div>
             </div>
-            <div className="pt-30 pb-16 bg-[#EDF1FB] flex justify-center items-center">
+            <div className="pt-30 pb-16 bg-[#EDF1FB]">
+
+            <motion.div
+                initial={{ opacity: 0, y: 25 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true, amount: 0.2 }}
+                className="flex justify-center items-center"
+              >
               <div className="mx-11">
                 <div className="flex justify-center">
                   <img
@@ -156,7 +210,10 @@ const Body = () => {
                 </div>
                 <p className="text-gray-600 text-md mt-2">On Capterra</p>
               </div>
+            </motion.div>
             </div>
+            {/* section 2 */}
+
           </div>
         </div>
       </div>
