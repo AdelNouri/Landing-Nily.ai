@@ -3,8 +3,8 @@ import "./App.css";
 import { Context } from "./context/context";
 
 import Navbar from "./components/Navbar";
-
 import Body from "./components/Body";
+import Section2 from "./components/Section2";
 
 function App() {
   const [panel, setPanel] = useState(false);
