@@ -56,24 +56,24 @@ const Section2 = () => {
       },
       {
         title: "aiEmailWriter",
-        img: "../../public/assets/gif/main-page/llm-compare.gif",
+        img: "../../public/assets/gif/AI-email-assistant/2.png",
         text:
           "Write and reply to emails 10x faster in any language using your personalized knowledge base!"
       },
       {
         title: "aiPdfReader",
-        img: "../../public/assets/gif/main-page/llm-compare.gif",
-        text: ""
+        img: "../../public/assets/gif/main-page/pdf-reader.gif",
+        text: "With AI PDF Summarizer. easily analyze, summarize, and interact with any PDF!"
       },
       {
         title: "aiWritingAssistant",
-        img: "../../public/assets/gif/main-page/llm-compare.gif",
-        text: ""
+        img: "../../public/assets/gif/main-page/writing-assisstant.gif",
+        text: "Generate content and ideas, write, research, optimize, correct grammar, tone, and much more 10x faster!"
       },
       {
         title: "aiImageGenerator",
-        img: "../../public/assets/gif/main-page/llm-compare.gif",
-        text: ""
+        img: "../../public/assets/gif/main-page/image-generator.gif",
+        text: "Create unique and captivating images, illustrations, and designs with ease!"
       }
     ];
 
@@ -81,7 +81,7 @@ const Section2 = () => {
       if (title == options[i].title) {
         return (
           <div className="flex justify-center mt-11">
-            <div className="w-225" key={title}>
+            <div className="w-11/12 sm:w-150 md:w-175 lg:w-225" key={title}>
               <motion.div
                 initial={{ opacity: 0, y: 2 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -103,7 +103,6 @@ const Section2 = () => {
                   <img
                     src={options[i].img}
                     className="w-full rounded-xl"
-                    alt="ai-sidebar.gif"
                   />
                 </div>
               </motion.div>
@@ -161,7 +160,7 @@ const Section2 = () => {
           </div>
         </motion.div>
       </div>
-      <div className="flex justify-center w-full">
+      <div className="flex justify-center ">
         <div className="mt-30">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -170,12 +169,12 @@ const Section2 = () => {
             viewport={{ once: true, amount: 0.2 }}
             className=""
           >
-            <p className="font-bold text-5xl text-slate-900">
+            <p className="font-bold text-3xl md:text-4xl lg:text-5xl text-slate-900">
               Comprehensive Solutions Unified with Nily AI
             </p>
           </motion.div>
           <div className="flex justify-center">
-            <div className="min-w-250">
+            <div className="w-full md:w-170 lg:w-full">
               <motion.div
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -183,7 +182,7 @@ const Section2 = () => {
                 viewport={{ once: true, amount: 0.2 }}
                 className=""
               >
-                <div className="flex flex-wrap justify-between mt-12 font-semibold text-sm">
+                <div className="flex flex-wrap justify-center lg:justify-between mt-12 font-semibold text-sm">
                   <div
                     id="aiSdebar"
                     className="py-3 px-6 cursor-pointer text-gray-600 hover:text-orange-500"
