@@ -1,9 +1,10 @@
 import { useState } from "react";
+import Section5 from './Section5';
 
 const Card = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [isVisible, setIsVisible] = useState(false);
-  const circleSize = 170; // مقدار موردنظر برای اندازه دایره
+  const circleSize = 180; // مقدار موردنظر برای اندازه دایره
 
   const handleMouseMove = e => {
     const rect = e.currentTarget.getBoundingClientRect();
@@ -79,7 +80,7 @@ const Card = () => {
 const Card2 = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [isVisible, setIsVisible] = useState(false);
-  const circleSize = 170; // مقدار موردنظر برای اندازه دایره
+  const circleSize = 180; // مقدار موردنظر برای اندازه دایره
 
   const handleMouseMove = e => {
     const rect = e.currentTarget.getBoundingClientRect();
@@ -153,7 +154,7 @@ const Card2 = () => {
 const Card3 = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [isVisible, setIsVisible] = useState(false);
-  const circleSize = 170; // مقدار موردنظر برای اندازه دایره
+  const circleSize = 180; // مقدار موردنظر برای اندازه دایره
 
   const handleMouseMove = e => {
     const rect = e.currentTarget.getBoundingClientRect();
@@ -230,7 +231,7 @@ const Card3 = () => {
 const Card4 = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [isVisible, setIsVisible] = useState(false);
-  const circleSize = 170; // مقدار موردنظر برای اندازه دایره
+  const circleSize = 180; // مقدار موردنظر برای اندازه دایره
 
   const handleMouseMove = e => {
     const rect = e.currentTarget.getBoundingClientRect();
@@ -300,7 +301,7 @@ const Card4 = () => {
     </div>
   );
 };
-export default function App() {
+const Section6 = () => {
   return (
     <div className="relative h-200 w-full flex items-center justify-center bg-[#ffe2bc]">
       <div
@@ -340,3 +341,5 @@ export default function App() {
     </div>
   );
 }
+
+export default Section6
