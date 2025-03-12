@@ -3,6 +3,8 @@ import Section2 from "./Section2";
 import Section3 from "./Section3";
 import Section4 from "./Section4";
 
+import Section6 from "./Section6";
+
 const Body = () => {
   return (
     <div className="bg-[#EDF1FB] w-full">
@@ -18,7 +20,9 @@ const Body = () => {
           <Section1 />
           <Section2 />
           <Section3 />
-          <Section4/>
+          <Section4 />
+
+          <Section6 />
         </div>
       </div>
     </div>
