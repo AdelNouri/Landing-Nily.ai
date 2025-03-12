@@ -40,7 +40,7 @@ const Section2 = () => {
     [flag]
   );
 
-  const returnELM2 = () => {
+  const returnELM = () => {
     let options = [
       {
         title: "aiSdebar",
@@ -185,7 +185,7 @@ const Section2 = () => {
                 <div className="flex flex-wrap justify-center lg:justify-between mt-12 font-semibold text-sm">
                   <div
                     id="aiSdebar"
-                    className="py-3 px-6 cursor-pointer text-gray-600 hover:text-orange-500"
+                    className="py-3 px-6 cursor-pointer text-gray-600 hover:text-orange-500 transform ease-in-out duration-200"
                     onClick={() => {
                       setTitle("aiSdebar");
                       setFlag(0);
@@ -209,7 +209,7 @@ const Section2 = () => {
                   </div>
                   <div
                     id="llmComparison"
-                    className="py-3 px-6 cursor-pointer text-gray-600 hover:text-[#FC6423]"
+                    className="py-3 px-6 cursor-pointer text-gray-600 hover:text-[#FC6423] transform ease-in-out duration-200"
                     onClick={() => {
                       setTitle("llmComparison");
                       setFlag(1);
@@ -242,7 +242,7 @@ const Section2 = () => {
                   </div>
                   <div
                     id="aiEmailWriter"
-                    className="py-3 px-6 cursor-pointer text-gray-600 hover:text-[#FC6423]"
+                    className="py-3 px-6 cursor-pointer text-gray-600 hover:text-[#FC6423] transform ease-in-out duration-200"
                     onClick={() => {
                       setTitle("aiEmailWriter");
                       setFlag(2);
@@ -269,7 +269,7 @@ const Section2 = () => {
                   </div>
                   <div
                     id="aiPdfReader"
-                    className="py-3 px-6 cursor-pointer text-gray-600 hover:text-[#FC6423]"
+                    className="py-3 px-6 cursor-pointer text-gray-600 hover:text-[#FC6423] transform ease-in-out duration-200"
                     onClick={() => {
                       setTitle("aiPdfReader");
                       setFlag(3);
@@ -297,7 +297,7 @@ const Section2 = () => {
                   </div>
                   <div
                     id="aiWritingAssistant"
-                    className="py-3 px-6 cursor-pointer text-gray-600 hover:text-[#FC6423]"
+                    className="py-3 px-6 cursor-pointer text-gray-600 hover:text-[#FC6423] transform ease-in-out duration-200"
                     onClick={() => {
                       setTitle("aiWritingAssistant");
                       setFlag(4);
@@ -324,7 +324,7 @@ const Section2 = () => {
                   </div>
                   <div
                     id="aiImageGenerator"
-                    className="py-3 px-6 cursor-pointer text-gray-600 hover:text-[#FC6423]"
+                    className="py-3 px-6 cursor-pointer text-gray-600 hover:text-[#FC6423] transform ease-in-out duration-200"
                     onClick={() => {
                       setTitle("aiImageGenerator");
                       setFlag(5);
@@ -352,7 +352,7 @@ const Section2 = () => {
                 </div>
               </motion.div>
 
-              {returnELM2()}
+              {returnELM()}
             </div>
           </div>
         </div>

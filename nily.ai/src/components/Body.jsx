@@ -1,5 +1,6 @@
-import Section2 from "./Section2";
 import Section1 from "./Section1";
+import Section2 from "./Section2";
+import Section3 from "./Section3";
 
 const Body = () => {
   return (
@@ -15,6 +16,7 @@ const Body = () => {
         >
           <Section1 />
           <Section2 />
+          <Section3 />
         </div>
       </div>
     </div>
