@@ -305,7 +305,7 @@ const Section6 = () => {
   return (
     <div className="relative h-200 w-full flex items-center justify-center bg-[#ffe2bc]">
       <div
-        className="absolute inset-0 w-full h-full opacity-15"
+        className="absolute inset-0 w-full h-full opacity-10"
         style={{
           backgroundImage:
             "linear-gradient(to right, #213B41 1px, transparent 1px), linear-gradient(to bottom, #213B41 1px, transparent 1px)",
