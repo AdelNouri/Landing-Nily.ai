@@ -5,6 +5,8 @@ const Section2 = () => {
   const [title, setTitle] = useState("aiSdebar");
   const [flag, setFlag] = useState(0);
 
+  let text =
+    "Access 20+ advanced AI assistants in one convenient platform,allowing you to chat, code, write, read, summarize, perform OCR,and translate web pages!";
   useEffect(
     () => {
       let aiSdebar = document.getElementById("aiSdebar");
@@ -38,242 +40,78 @@ const Section2 = () => {
     [flag]
   );
 
-  useEffect(
-    () => {
-      let options = [
-        {
-          title: 'aiSdebar',
-          text:
-            "Access 20+ advanced AI assistants in one convenient platform,allowing you to chat, code, write, read, summarize, perform OCR,and translate web pages!"
-        },
-        { title: 'llmComparison', text: "" },
-        { title: 'aiEmailWriter', text: "" },
-        { title: 'aiPdfReader', text: "" },
-        { title: 'aiWritingAssistant', text: "" },
-        { title: 'aiImageGenerator', text: "" }
-      ];
-      console.log(options);
-      for (let i = 0; i < options.length; i++) {
-        if (title == options[i].title) {
-            const returnELM = () => {
-                return options[i].text;
-            }
-            aiSdebarElm(options[i].text);
-        }
+  const returnELM2 = () => {
+    let options = [
+      {
+        title: "aiSdebar",
+        img: "../../public/assets/gif/main-page/ai-sidebar.gif",
+        text:
+          "Access 20+ advanced AI assistants in one convenient platform,allowing you to chat, code, write, read, summarize, perform OCR,and translate web pages!"
+      },
+      {
+        title: "llmComparison",
+        img: "../../public/assets/gif/main-page/llm-compare.gif",
+        text:
+          " Access and compare LLMs like DeepSeek R1, Chat GPT 4o, Perplexity,Gemini 1.5 Pro, Claude 3.5, Sonnet, Mistral Large, Llama 3.1, and 20+ more AI Assistant models all in one place!"
+      },
+      {
+        title: "aiEmailWriter",
+        img: "../../public/assets/gif/main-page/llm-compare.gif",
+        text:
+          "Write and reply to emails 10x faster in any language using your personalized knowledge base!"
+      },
+      {
+        title: "aiPdfReader",
+        img: "../../public/assets/gif/main-page/llm-compare.gif",
+        text: ""
+      },
+      {
+        title: "aiWritingAssistant",
+        img: "../../public/assets/gif/main-page/llm-compare.gif",
+        text: ""
+      },
+      {
+        title: "aiImageGenerator",
+        img: "../../public/assets/gif/main-page/llm-compare.gif",
+        text: ""
       }
-    },
-    [title]
-  );
+    ];
 
-  const aiSdebarElm = event => {
-    let text = event
-    console.log(text);
-    return (
-      <div className="flex justify-center mt-11">
-        <div className="w-225">
-          <motion.div
-            initial={{ opacity: 0, y: 2 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            viewport={{ once: true, amount: 0.0 }}
-            className="text-gray-500 px-3"
-          >
-
-            <p>{returnELM()}</p>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 25 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true, amount: 0.2 }}
-          >
-            <div className="flex justify-center border-2 border-[#FC6423] rounded-xl mt-8">
-              <img
-                src="../../public/assets/gif/main-page/ai-sidebar.gif"
-                className="w-full rounded-xl"
-                alt="ai-sidebar.gif"
-              />
+    for (let i = 0; i < options.length; i++) {
+      if (title == options[i].title) {
+        return (
+          <div className="flex justify-center mt-11">
+            <div className="w-225" key={title}>
+              <motion.div
+                initial={{ opacity: 0, y: 2 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+                viewport={{ once: true, amount: 0.0 }}
+                className="text-gray-500 px-3"
+              >
+                <p>
+                  {options[i].text}
+                </p>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 25 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                viewport={{ once: true, amount: 0.2 }}
+              >
+                <div className="flex justify-center border-2 border-[#FC6423] rounded-xl mt-8">
+                  <img
+                    src={options[i].img}
+                    className="w-full rounded-xl"
+                    alt="ai-sidebar.gif"
+                  />
+                </div>
+              </motion.div>
             </div>
-          </motion.div>
-        </div>
-      </div>
-    );
-  };
-
-  const llmComparisonElm = () => {
-    return (
-      <div className="flex justify-center mt-11">
-        <div className="w-225">
-          <motion.div
-            initial={{ opacity: 0, y: 2 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            viewport={{ once: true, amount: 0.0 }}
-            className="text-gray-500 px-3"
-          >
-            <p>
-              Access and compare LLMs like DeepSeek R1, Chat GPT 4o, Perplexity,
-              Gemini 1.5 Pro, Claude 3.5, Sonnet, Mistral Large, Llama 3.1, and
-              20+ more AI Assistant models all in one place!
-            </p>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 25 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true, amount: 0.2 }}
-          >
-            <div className="flex justify-center border-2 border-[#FC6423] rounded-xl mt-8">
-              <img
-                src="../../public/assets/gif/main-page/llm-compare.gif"
-                className="w-full rounded-xl"
-                alt="llm-compare.gif"
-              />
-            </div>
-          </motion.div>
-        </div>
-      </div>
-    );
-  };
-
-  const aiPdfReaderElm = () => {
-    return (
-      <div className="flex justify-center mt-11">
-        <div className="w-225">
-          <motion.div
-            initial={{ opacity: 0, y: 2 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            viewport={{ once: true, amount: 0.0 }}
-            className="text-gray-500 px-3"
-          >
-            <p>
-              Write and reply to emails 10x faster in any language using your
-              personalized knowledge base!
-            </p>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 25 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true, amount: 0.2 }}
-          >
-            <div className="flex justify-center border-2 border-[#FC6423] rounded-xl mt-8">
-              <img
-                src="../../public/assets/gif/AI-email-assistant/2.png"
-                className="w-full rounded-xl"
-                alt="AI-email-assistant.gif"
-              />
-            </div>
-          </motion.div>
-        </div>
-      </div>
-    );
-  };
-
-  const aiEmailWriterElm = () => {
-    return (
-      <div className="flex justify-center mt-11">
-        <div className="w-225">
-          <motion.div
-            initial={{ opacity: 0, y: 2 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            viewport={{ once: true, amount: 0.0 }}
-            className="text-gray-500 px-3"
-          >
-            <p>
-              With AI PDF Summarizer. easily analyze, summarize, and interact
-              with any PDF!
-            </p>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 25 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true, amount: 0.2 }}
-          >
-            <div className="flex justify-center border-2 border-[#FC6423] rounded-xl mt-8">
-              <img
-                src="../../public/assets/gif/main-page/pdf-reader.gif"
-                className="w-full rounded-xl"
-                alt="pdf-reader.gif"
-              />
-            </div>
-          </motion.div>
-        </div>
-      </div>
-    );
-  };
-
-  const aiWritingAssistantElm = () => {
-    return (
-      <div className="flex justify-center mt-11">
-        <div className="w-225">
-          <motion.div
-            initial={{ opacity: 0, y: 2 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            viewport={{ once: true, amount: 0.0 }}
-            className="text-gray-500 px-3"
-          >
-            <p>
-              Generate content and ideas, write, research, optimize, correct
-              grammar, tone, and much more 10x faster!
-            </p>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 25 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true, amount: 0.2 }}
-          >
-            <div className="flex justify-center border-2 border-[#FC6423] rounded-xl mt-8">
-              <img
-                src="../../public/assets/gif/main-page/writing-assisstant.gif"
-                className="w-full rounded-xl"
-                alt="writing-assisstant.gif"
-              />
-            </div>
-          </motion.div>
-        </div>
-      </div>
-    );
-  };
-
-  const aiImageGeneratorElm = () => {
-    return (
-      <div className="flex justify-center mt-11">
-        <div className="w-225">
-          <motion.div
-            initial={{ opacity: 0, y: 2 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            viewport={{ once: true, amount: 0.0 }}
-            className="text-gray-500 px-3"
-          >
-            <p>
-              Create unique and captivating images, illustrations, and designs
-              with ease!
-            </p>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 25 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true, amount: 0.2 }}
-          >
-            <div className="flex justify-center border-2 border-[#FC6423] rounded-xl mt-8">
-              <img
-                src="../../public/assets/gif/main-page/image-generator.gif"
-                className="w-full rounded-xl"
-                alt="image-generator.gif"
-              />
-            </div>
-          </motion.div>
-        </div>
-      </div>
-    );
+          </div>
+        );
+      }
+    }
   };
 
   return (
@@ -514,13 +352,8 @@ const Section2 = () => {
                   </div>
                 </div>
               </motion.div>
-              {/* {returnELM()} */}
-              {title == "aiSdebar" ? aiSdebarElm() : null}
-              {/* {title == "llmComparison" ? llmComparisonElm() : null}
-              {title == "aiEmailWriter" ? aiEmailWriterElm() : null}
-              {title == "aiPdfReader" ? aiPdfReaderElm() : null}
-              {title == "aiWritingAssistant" ? aiWritingAssistantElm() : null}
-              {title == "aiImageGenerator" ? aiImageGeneratorElm() : null} */}
+
+              {returnELM2()}
             </div>
           </div>
         </div>
