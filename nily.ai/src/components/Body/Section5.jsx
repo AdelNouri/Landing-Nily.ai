@@ -95,7 +95,7 @@ const ReturnELM = ({ title, order, text, btnText, gif }) => {
           viewport={{ once: true, amount: 0.2 }}
           className=""
         >
-      <div className="grid md:grid-cols-2 items-center px-4 sm:px-0 gap-12 sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:w-[1280px] 2xl:w-[1504px]">
+      <div className="grid md:grid-cols-2 items-center px-5 sm:px-0 gap-12 sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:w-[1280px] 2xl:w-[1504px]">
         <div className="text-left">
           <p className="text-4xl lg:text-5xl font-bold text-[#213B41] mb-8">
             {title}
@@ -141,7 +141,7 @@ const ReturnELM = ({ title, order, text, btnText, gif }) => {
           className=""
         > 
       <div className="grid md:grid-cols-2 items-center px-4 sm:px-0 gap-12 sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:w-[1280px] 2xl:w-[1504px]">
-        <div className="text-left order-1">
+        <div className="text-left md:order-1">
           <p className="text-4xl lg:text-5xl font-bold text-[#213B41] mb-8">
             {title}
           </p>
@@ -171,7 +171,7 @@ const ReturnELM = ({ title, order, text, btnText, gif }) => {
             </div>
           </div>
         </div>
-        <div className="w-full shadow-2xl rounded-3xl order-0">
+        <div className="w-full shadow-2xl rounded-3xl md:order-0">
           <img src={gif} className="rounded-2xl" alt="" />
         </div>
       </div>
