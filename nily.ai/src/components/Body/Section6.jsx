@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Section5 from './Section5';
+import Section5 from "./Section5";
 
 const Card = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -303,26 +303,19 @@ const Card4 = () => {
 };
 const Section6 = () => {
   return (
-    <div className="relative md:px-0 h-[1079px] md:h-[984px] lg:h-[876px] xl:h-[764px] w-full flex items-center justify-center bg-[#ffe2bc]">
+    <div className="relative md:px-0 min-h-screen h-auto sm:h-[1079px] md:h-[984px] lg:h-[876px] xl:h-[764px] w-full flex items-center justify-center bg-[#f4f1ed]">
       <div
-        className="absolute inset-0 w-full h-full opacity-10"
+        className="absolute inset-0 w-full h-full opacity-4"
         style={{
           backgroundImage:
             "linear-gradient(to right, #213B41 1px, transparent 1px), linear-gradient(to bottom, #213B41 1px, transparent 1px)",
           backgroundSize: "24px 24px"
         }}
       />
-
-      <div
-        className="absolute inset-0 w-full h-full py-25"
-        style={{
-          background:
-            "radial-gradient(circle, rgba(237, 241, 251,0.7) 100%, rgba(237, 241, 251,0.7) 100%, rgba(237, 241, 251,1) 100%)"
-        }}
-      >
+      <div className="w-full py-16">
         <div className="flex justify-center">
           <div className="flex flex-col lg:flex-row gap-16 w-[608px] md:h-[792px] md:w-[736px] lg:h-[684px] lg:w-[992px] xl:h-[600px] 2xl:h-[572px] xl:w-[1280px] ">
-            <div className="font-bold text-4xl md:text-5xl lg:text-6xl lg:w-[30%] text-[#213B41] text-left lg:sticky lg:mt-24 relative">
+            <div className="font-bold text-4xl px-4 md:px-0 md:text-5xl lg:text-6xl lg:w-[30%] text-[#213B41] text-left lg:sticky lg:mt-24 relative">
               <p>Exciting Features on the Horizon!</p>
             </div>
             <div className="md:flex px-4 md:px-0 lg:w-[70%]">
@@ -337,7 +330,34 @@ const Section6 = () => {
         </div>
       </div>
     </div>
+    // <div className="relative w-full min-h-screen h-auto flex items-center justify-center bg-[#f4f1ed]">
+    //   <div
+    //     className="absolute inset-0 w-full h-full opacity-3"
+    //     style={{
+    //       backgroundImage:
+    //         "linear-gradient(to right, #213B41 1px, transparent 1px), linear-gradient(to bottom, #213B41 1px, transparent 1px)",
+    //       backgroundSize: "24px 24px"
+    //     }}
+    //   />
+    //     <div className="w-full py-16">
+    //       <div className="flex justify-center">
+    //         <div className="flex flex-col lg:flex-row gap-16 w-full max-w-[1280px] px-4">
+    //           <div className="font-bold text-4xl md:text-5xl lg:text-6xl lg:w-[30%] text-[#213B41] text-left lg:sticky lg:mt-24 relative">
+    //             <p>Exciting Features on the Horizon!</p>
+    //           </div>
+    //           <div className="md:flex flex-col lg:flex-row w-full lg:w-[70%] gap-6">
+    //             <Card />
+    //             <div className="w-full lg:w-[65%] grid grid-cols-1 gap-6">
+    //               <Card2 />
+    //               <Card3 />
+    //               <Card4 />
+    //             </div>
+    //           </div>
+    //         </div>
+    //     </div>
+    //   </div>
+    // </div>
   );
-}
+};
 
-export default Section6
+export default Section6;
