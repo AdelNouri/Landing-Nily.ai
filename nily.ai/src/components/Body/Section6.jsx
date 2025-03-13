@@ -21,7 +21,7 @@ const Card = () => {
 
   return (
     <div
-      className="relative bg-white p-6 h-full w-[35%] mr-6 rounded-lg border-l-8 border-[rgb(222,121,50)] overflow-hidden hover:shadow-lg transition duration-300"
+      className="relative bg-white p-6 mb-6 mt-8 md:mb-0 md:mt-0 w-full lg:h-full lg:w-[35%] mr-6 rounded-lg border-l-8 border-[rgb(222,121,50)] overflow-hidden hover:shadow-lg transition duration-300"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
@@ -303,7 +303,7 @@ const Card4 = () => {
 };
 const Section6 = () => {
   return (
-    <div className="relative h-200 w-full flex items-center justify-center bg-[#ffe2bc]">
+    <div className="relative md:px-0 h-[1079px] md:h-[984px] lg:h-[876px] xl:h-[764px] w-full flex items-center justify-center bg-[#ffe2bc]">
       <div
         className="absolute inset-0 w-full h-full opacity-10"
         style={{
@@ -321,18 +321,16 @@ const Section6 = () => {
         }}
       >
         <div className="flex justify-center">
-          <div className="flex justify-between w-[1280px] h-[572px]">
-            <div className="font-bold text-6xl w-[33%] text-[#213B41] text-left mt-23">
-              <p>Exciting</p>
-              <p>Features on</p>
-              <p>the Horizon!</p>
+          <div className="flex flex-col lg:flex-row gap-16 w-[608px] md:h-[792px] md:w-[736px] lg:h-[684px] lg:w-[992px] xl:h-[600px] 2xl:h-[572px] xl:w-[1280px] ">
+            <div className="font-bold text-4xl md:text-5xl lg:text-6xl lg:w-[30%] text-[#213B41] text-left lg:sticky lg:mt-24 relative">
+              <p>Exciting Features on the Horizon!</p>
             </div>
-            <div className="flex w-[67%] ml-2">
+            <div className="md:flex px-4 md:px-0 lg:w-[70%]">
               <Card />
-              <div className="w-[65%] grid grid-cols-1 gap-y-6">
-                {<Card2 />}
-                {<Card3 />}
-                {<Card4 />}
+              <div className="lg:w-[65%] grid grid-cols-1 gap-6">
+                <Card2 />
+                <Card3 />
+                <Card4 />
               </div>
             </div>
           </div>
