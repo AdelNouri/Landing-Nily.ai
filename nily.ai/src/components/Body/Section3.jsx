@@ -142,12 +142,12 @@ const Section3 = () => {
         viewport={{ once: true, amount: 0.2 }}
         className=""
       >
-        <div className="flex justify-center mt-10">
-          <div className="bg-white w-315 2xl:w-350 py-8 px-9 rounded-lg shadow-xl">
+        <div className="flex justify-center mt-8">
+          <div className="bg-white w-full mx-4 sm:w-[608px] md:w-[736px] lg:w-[992px] xl:w-[1248px] 2xl:w-[1504px] py-8 px-9 rounded-lg shadow-xl">
             <p className="font-semibold text-2xl text-gray-800 flex justify-start">
               Developer
             </p>
-            <div className="grid grid-cols-2 gap-y-6 gap-x-5 mt-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-5 mt-8">
               <div className="flex justify-center">
                 <div className="flex justify-center items-center p-3 bg-[#F4F1ED] h-12 rounded-md">
                   <svg
@@ -301,10 +301,10 @@ const Section3 = () => {
               viewport={{ once: true, amount: 0.2 }}
               className="flex justify-center"
             >
-              <div className="flex flex-wrap justify-center gap-y-4 w-315 2xl:w-350 mt-12">
+              <div className="flex flex-wrap justify-center w-full mx-4 sm:w-[608px] md:w-[736px] lg:w-[992px] xl:w-[1248px] 2xl:w-[1504px] mt-12">
                 <div
                   id="Developer"
-                  className="py-2 px-4.5 flex justify-center items-center cursor-pointer rounded-md border border-[#DE7931] bg-[#F4F1EC] transform ease-in-out duration-200"
+                  className="py-2 px-4 flex justify-center items-center cursor-pointer rounded-md border m-2 border-[#DE7931] bg-[#F4F1EC] transform ease-in-out duration-200"
                   onClick={() => {
                     setTitle("Developer");
                     setFlag(0);
@@ -326,7 +326,7 @@ const Section3 = () => {
                 </div>
                 <div
                   id="Entepreneurs"
-                  className="py-2 px-4.5 flex justify-center items-center cursor-pointer rounded-md border ml-4 border-[#DE7931] bg-[#F4F1EC] text-gray-800 transform ease-in-out duration-200"
+                  className="py-2 px-4 flex justify-center items-center cursor-pointer rounded-md border m-2 border-[#DE7931] bg-[#F4F1EC] text-gray-800 transform ease-in-out duration-200"
                   onClick={() => {
                     setTitle("Entepreneurs");
                     setFlag(1);
@@ -350,7 +350,7 @@ const Section3 = () => {
                 </div>
                 <div
                   id="Marketers"
-                  className="py-2 px-4.5 flex justify-center items-center cursor-pointer rounded-md border ml-4 border-[#DE7931] bg-[#F4F1EC] text-gray-800 transform ease-in-out duration-200"
+                  className="py-2 px-4 flex justify-center items-center cursor-pointer rounded-md border m-2 border-[#DE7931] bg-[#F4F1EC] text-gray-800 transform ease-in-out duration-200"
                   onClick={() => {
                     setTitle("Marketers");
                     setFlag(2);
@@ -372,7 +372,7 @@ const Section3 = () => {
                 </div>
                 <div
                   id="Researchers"
-                  className="py-2 px-4.5 flex justify-center items-center cursor-pointer rounded-md border ml-4 border-[#DE7931] bg-[#F4F1EC] text-gray-800 transform ease-in-out duration-200"
+                  className="py-2 px-4 flex justify-center items-center cursor-pointer rounded-md border m-2 border-[#DE7931] bg-[#F4F1EC] text-gray-800 transform ease-in-out duration-200"
                   onClick={() => {
                     setTitle("Researchers");
                     setFlag(3);
@@ -400,7 +400,7 @@ const Section3 = () => {
                 </div>
                 <div
                   id="Customer"
-                  className="py-2 px-4.5 flex justify-center items-center cursor-pointer rounded-md border ml-4 border-[#DE7931] bg-[#F4F1EC] text-gray-800 transform ease-in-out duration-200"
+                  className="py-2 px-4 flex justify-center items-center cursor-pointer rounded-md border m-2 border-[#DE7931] bg-[#F4F1EC] text-gray-800 transform ease-in-out duration-200"
                   onClick={() => {
                     setTitle("Customer");
                     setFlag(4);
@@ -426,7 +426,7 @@ const Section3 = () => {
                 </div>
                 <div
                   id="ContentCreators"
-                  className="py-2 px-4.5 flex justify-center items-center cursor-pointer rounded-md border ml-4 border-[#DE7931] bg-[#F4F1EC] text-gray-800 transform ease-in-out duration-200"
+                  className="py-2 px-4 flex justify-center items-center cursor-pointer rounded-md border m-2 border-[#DE7931] bg-[#F4F1EC] text-gray-800 transform ease-in-out duration-200"
                   onClick={() => {
                     setTitle("ContentCreators");
                     setFlag(5);
@@ -453,7 +453,7 @@ const Section3 = () => {
                 </div>
                 <div
                   id="Analysts"
-                  className="py-2 px-4.5 flex justify-center items-center cursor-pointer rounded-md border ml-4 border-[#DE7931] bg-[#F4F1EC] text-gray-800 transform ease-in-out duration-200"
+                  className="py-2 px-4 flex justify-center items-center cursor-pointer rounded-md border m-2 border-[#DE7931] bg-[#F4F1EC] text-gray-800 transform ease-in-out duration-200"
                   onClick={() => {
                     setTitle("Analysts");
                     setFlag(6);
@@ -479,7 +479,7 @@ const Section3 = () => {
                 </div>
                 <div
                   id="Students"
-                  className="py-2 px-4.5 flex justify-center items-center cursor-pointer rounded-md border ml-4 border-[#DE7931] bg-[#F4F1EC] text-gray-800 transform ease-in-out duration-200"
+                  className="py-2 px-4 flex justify-center items-center cursor-pointer rounded-md border m-2 border-[#DE7931] bg-[#F4F1EC] text-gray-800 transform ease-in-out duration-200"
                   onClick={() => {
                     setTitle("Students");
                     setFlag(7);
@@ -500,11 +500,11 @@ const Section3 = () => {
                     <path d="M12 7v14" />
                     <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z" />
                   </svg>
-                  <p className="flex justify-center text-gray-700">Students</p>
+                  <p className="flex justify-center text-gray-700">Students and Academics</p>
                 </div>
                 <div
                   id="SocialMedia"
-                  className="py-2 px-4.5 flex justify-center items-center cursor-pointer rounded-md border ml-4 border-[#DE7931] bg-[#F4F1EC] text-gray-800 transform ease-in-out duration-200"
+                  className="py-2 px-4 flex justify-center items-center cursor-pointer rounded-md border m-2 border-[#DE7931] bg-[#F4F1EC] text-gray-800 transform ease-in-out duration-200"
                   onClick={() => {
                     setTitle("SocialMedia");
                     setFlag(8);
@@ -532,7 +532,7 @@ const Section3 = () => {
                 </div>
                 <div
                   id="ProductManagers"
-                  className="py-2 px-4.5 flex justify-center items-center cursor-pointer rounded-md border ml-4 border-[#DE7931] bg-[#F4F1EC] text-gray-800 transform ease-in-out duration-200"
+                  className="py-2 px-4 flex justify-center items-center cursor-pointer rounded-md border m-2 border-[#DE7931] bg-[#F4F1EC] text-gray-800 transform ease-in-out duration-200"
                   onClick={() => {
                     setTitle("ProductManagers");
                     setFlag(9);
@@ -563,7 +563,7 @@ const Section3 = () => {
                 </div>
                 <div
                   id="SalesProfessionals"
-                  className="py-2 px-4.5 flex justify-center items-center cursor-pointer rounded-md border ml-4 border-[#DE7931] bg-[#F4F1EC] text-gray-800 transform ease-in-out duration-200"
+                  className="py-2 px-4 flex justify-center items-center cursor-pointer rounded-md border m-2 border-[#DE7931] bg-[#F4F1EC] text-gray-800 transform ease-in-out duration-200"
                   onClick={() => {
                     setTitle("SalesProfessionals");
                     setFlag(10);
@@ -590,7 +590,7 @@ const Section3 = () => {
                 </div>
                 <div
                   id="HRProfessionals"
-                  className="py-2 px-4.5 flex justify-center items-center cursor-pointer rounded-md border ml-4 border-[#DE7931] bg-[#F4F1EC] text-gray-800 transform ease-in-out duration-200"
+                  className="py-2 px-4 flex justify-center items-center cursor-pointer rounded-md border m-2 border-[#DE7931] bg-[#F4F1EC] text-gray-800 transform ease-in-out duration-200"
                   onClick={() => {
                     setTitle("HRProfessionals");
                     setFlag(11);
