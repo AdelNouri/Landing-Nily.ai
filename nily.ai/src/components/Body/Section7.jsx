@@ -103,7 +103,7 @@ const Section7 = () => {
                   </div>
                 </div>
               </div>
-              <p class="text-[#6C6C6C] text-sm flex justify-start mt-3">
+              <p class="text-[#6C6C6C] text-left text-sm flex justify-start mt-3">
                 Easy to use and very effective.
               </p>
             </div>
@@ -124,7 +124,7 @@ const Section7 = () => {
                   </div>
                 </div>
               </div>
-              <p class="text-[#6C6C6C] text-sm flex justify-start mt-3">
+              <p class="text-[#6C6C6C] text-left text-sm flex justify-start mt-3">
                 Perfect
               </p>
             </div>
@@ -145,7 +145,7 @@ const Section7 = () => {
                   </div>
                 </div>
               </div>
-              <p class="text-[#6C6C6C] text-sm flex justify-start mt-3">
+              <p class="text-[#6C6C6C] text-left text-sm flex justify-start mt-3">
                 Works great!
               </p>
             </div>
@@ -168,7 +168,7 @@ const Section7 = () => {
                   </div>
                 </div>
               </div>
-              <p class="text-[#6C6C6C] text-sm flex justify-start mt-3">
+              <p class="text-[#6C6C6C] text-left text-sm flex justify-start mt-3">
                 very good
               </p>
             </div>
@@ -189,7 +189,7 @@ const Section7 = () => {
                   </div>
                 </div>
               </div>
-              <p class="text-[#6C6C6C] text-sm flex justify-start mt-3">
+              <p class="text-[#6C6C6C] text-left text-sm flex justify-start mt-3">
                 The AI suggestions are usually spot-on. Makes my job much
                 easier.
               </p>
@@ -211,7 +211,7 @@ const Section7 = () => {
                   </div>
                 </div>
               </div>
-              <p class="text-[#6C6C6C] text-sm flex justify-start mt-3">
+              <p class="text-[#6C6C6C] text-left text-sm flex justify-start mt-3">
                 Excellent extension. Saves me a lot of time daily.
               </p>
             </div>

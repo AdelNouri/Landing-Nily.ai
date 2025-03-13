@@ -12,6 +12,7 @@ dist
 dist-ssr
 *.local
 public/assets
+src/components/Body/Section8.jsx
 
 # Editor directories and files
 .vscode/*

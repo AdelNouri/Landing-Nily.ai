@@ -215,7 +215,6 @@ const Section2 = () => {
                       setFlag(1);
                     }}
                   >
-                    {/* <div className="flex justify-center"> */}
 
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
