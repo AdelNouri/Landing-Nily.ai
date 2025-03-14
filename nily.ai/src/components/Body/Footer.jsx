@@ -373,7 +373,7 @@ const Footer = () => {
       </div>
 
       <div className="flex justify-center py-6 px-4 border-t border-[#F4F1ED]/10">
-        <div className="md:flex md:justify-between items-center w-[992px]">
+        <div className="md:flex md:justify-between items-center w-[992px] lg:w-[1504px]">
           <p className="text-xs text-[#F4F1ED]/60">
             © 2024 Nily AI. All rights reserved.
           </p>

@@ -1,13 +1,13 @@
 const Section8 = () => {
   return (
-    <div className="relative flex items-center justify-center py-20 sm:py-0">
+    <div className="relative flex items-center justify-center py-18">
       <div
         className="absolute inset-0"
         style={{
-          background: "#0E3B3A", // رنگ پس‌زمینه
+          background: "#053133", // رنگ پس‌زمینه
           backgroundImage:
             "linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px)", // خطوط شطرنجی با شفافیت کاهش یافته
-          backgroundSize: "33px 33px", // اندازه هر خانه شطرنجی
+          backgroundSize: "32px 32px", // اندازه هر خانه شطرنجی
           width: "100%", // اندازه عرض به اندازه المان
           height: "100%", // اندازه ارتفاع به اندازه المان
         }}
@@ -16,7 +16,7 @@ const Section8 = () => {
         className="absolute inset-0 w-full h-full"
         style={{
           background:
-            "radial-gradient(circle, rgba(14, 59, 58,0.3) 20%, rgba(14, 59, 58,0.8) 60%, rgba(14, 59, 58,1) 68%)"
+            "radial-gradient(circle, rgba(5, 49, 51,0.3) 20%, rgba(5, 49, 51,0.8) 60%, rgba(5, 49, 51,1) 68%)"
         }}
       />
       <div
