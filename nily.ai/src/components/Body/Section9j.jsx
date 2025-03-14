@@ -1,43 +1,5 @@
-import { useRef } from "react";
 import { motion } from "framer-motion";
-
-let questions = [
-  {
-    id: 1,
-    questionTitle: "What is Nily AI?",
-    answer:
-      "Nily AI is a comprehensive suite of AI-powered tools designed to boost productivity across various tasks, from writing and research to content creation and project management."
-  },
-  {
-    id: 2,
-    questionTitle: "What are the core features of Nily AI?",
-    answer:
-      "Nily AI offers a variety of tools, including:- Mind Map Generator: Visually organize ideas and brainstorm concepts.- Image Generator: Create images from text prompts.- Post Generator: Generate social media posts for platforms like LinkedIn and X (formerly Twitter).- YouTube Summarizer: Summarize, translate, and chat with YouTube videos.- PDF Reader/Summarizer: Extract key points, translate, and answer questions from PDFs.- AI Sidebar: Access various AI assistants within a convenient browser sidebar.- Writing Assistant: Improve writing through content generation, grammar correction, and optimization.- Email Writer: Compose professional emails effortlessly.- Carousel Generator: Create engaging LinkedIn carousel posts."
-  },
-  {
-    id: 3,
-    questionTitle: "How can Nily AI benefit different professionals?",
-    answer:
-      "Nily AI benefits various professionals in unique ways:- Content Creators: Streamline content creation, automate repetitive tasks, and generate fresh ideas.- Analysts: Automate routine reporting, enhance decision-making with data-driven insights, and forecast outcomes.- HR Professionals: Analyze employee feedback, identify top talent, and improve hiring processes.- Customer Service Representatives: Gain insights from customer interactions and provide more personalized support.- Educators: Develop lesson plans, create engaging learning materials, and simplify complex topics.- Students: Organize study plans, brainstorm project ideas, and get help with assignments."
-  },
-  {
-    id: 4,
-    questionTitle: "How many AI assistants are available through Nily AI?",
-    answer:
-      "Nily AI provides access to over 20 AI assistants, including models like ChatGPT-4, Gemini 1.5 Pro, Llama 3.1, Claude 3.5 Sonnet, and more."
-  },
-  {
-    id: 5,
-    questionTitle: "Where can I learn more or access Nily AI?",
-    answer:
-      "Visit the official Nily AI website to learn more, download the tools, and explore pricing options."
-  },
-  {
-    id: 6,
-    questionTitle: "Does Nily AI Assistant have any trials available?",
-    answer: "Yes, you can try Nily AI for 7 days before making a purchase."
-  }
-];
+import { questions } from "../../arrays/Arrays";
 
 const AnimatedComponent = () => {
   const toggleElement = event => {
@@ -127,7 +89,7 @@ const AnimatedComponent = () => {
               </div>
 
               <div
-                className="text-[#6C6C6C] text-left bg-white px-4 pb-4 rounded-b-lg toggle-box hidden opacity-0 -translate-y-5 transition-all duration-500 ease-out overflow-hidden "
+                className="text-[#6C6C6C] text-left bg-white px-4 pb-4 rounded-b-lg toggle-box hidden opacity-0 -translate-y-5 transition-all duration-400 ease-out overflow-hidden "
                 style={{ maxHeight: "0px" }}
               >
                 <p>
