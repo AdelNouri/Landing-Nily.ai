@@ -1,6 +1,6 @@
 const Section8 = () => {
   return (
-    <div className="relative flex items-center justify-center py-18">
+    <div className="relative flex items-center justify-center py-18 z-0">
       <div
         className="absolute inset-0"
         style={{
@@ -33,10 +33,10 @@ const Section8 = () => {
           <p>Nily AI Now!</p>
         </div>
         <div className="flex flex-wrap justify-center items-center mt-4 h-10">
-          <div className="mt-3 text-white font-bold bg-[#FC6423] py-3.5 w-35.5 rounded-full sm:mr-4.25 hover:scale-106 transition ease-out duration-350">
+          <div className="mt-3 text-white font-bold bg-[#FC6423] py-3.5 w-35.5 rounded-full sm:mr-4.25 hover:scale-112 transition ease-out duration-300">
             <button>Get Started</button>
           </div>
-          <div className="mt-3 bg-white font-bold flex justify-center items-center border-2 border-gray-100 text-gray-800 py-3 w-60 rounded-full hover:border-orange-500 hover:scale-106 transition ease-out duration-350">
+          <div className="mt-3 bg-white font-bold flex justify-center items-center border-2 border-gray-100 text-gray-800 py-3 w-60 rounded-full hover:border-orange-500 hover:scale-112 transition ease-out duration-300">
             <svg
               className="h-5 w-5 mr-2 text-gray-800"
               viewBox="0 0 24 24"
