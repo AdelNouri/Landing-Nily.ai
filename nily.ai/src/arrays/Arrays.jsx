@@ -1,4 +1,43 @@
-let cards = [
+let solutions = [
+  {
+    title: "aiSdebar",
+    img: "../../public/assets/gif/main-page/ai-sidebar.gif",
+    text:
+      "Access 20+ advanced AI assistants in one convenient platform,allowing you to chat, code, write, read, summarize, perform OCR,and translate web pages!"
+  },
+  {
+    title: "llmComparison",
+    img: "../../public/assets/gif/main-page/llm-compare.gif",
+    text:
+      " Access and compare LLMs like DeepSeek R1, Chat GPT 4o, Perplexity,Gemini 1.5 Pro, Claude 3.5, Sonnet, Mistral Large, Llama 3.1, and 20+ more AI Assistant models all in one place!"
+  },
+  {
+    title: "aiEmailWriter",
+    img: "../../public/assets/gif/AI-email-assistant/2.png",
+    text:
+      "Write and reply to emails 10x faster in any language using your personalized knowledge base!"
+  },
+  {
+    title: "aiPdfReader",
+    img: "../../public/assets/gif/main-page/pdf-reader.gif",
+    text:
+      "With AI PDF Summarizer. easily analyze, summarize, and interact with any PDF!"
+  },
+  {
+    title: "aiWritingAssistant",
+    img: "../../public/assets/gif/main-page/writing-assisstant.gif",
+    text:
+      "Generate content and ideas, write, research, optimize, correct grammar, tone, and much more 10x faster!"
+  },
+  {
+    title: "aiImageGenerator",
+    img: "../../public/assets/gif/main-page/image-generator.gif",
+    text:
+      "Create unique and captivating images, illustrations, and designs with ease!"
+  }
+];
+
+let infoBoxes = [
   {
     title: "Developer",
     sections: [
@@ -1156,6 +1195,187 @@ let buttons = [
   }
 ];
 
+let cards = [
+  {
+    title: "AI Sidebar",
+    text: "Access the best chrome AI sidebar on any web page!",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-panel-right-dashed w-5 h-5"
+      >
+        <rect width="18" height="18" x="3" y="3" rx="2" />
+        <path d="M15 14v1" />
+        <path d="M15 19v2" />
+        <path d="M15 3v2" />
+        <path d="M15 9v1" />
+      </svg>
+    )
+  },
+  {
+    title: "AI Email Assistant",
+    text: "Compose professional emails without lifting a finger!",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-mail w-5 h-5"
+      >
+        <rect width="20" height="16" x="2" y="4" rx="2" />
+        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+      </svg>
+    )
+  },
+  {
+    title: "AI Writing Assistant",
+    text: "Compose professional emails without lifting a finger!",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-mail w-5 h-5"
+      >
+        <rect width="20" height="16" x="2" y="4" rx="2" />
+        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+      </svg>
+    )
+  },
+  {
+    title: "AI Post Generator",
+    text: "Create just the right social media posts with a single tap!",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-pen-tool w-5 h-5"
+      >
+        <path d="M15.707 21.293a1 1 0 0 1-1.414 0l-1.586-1.586a1 1 0 0 1 0-1.414l5.586-5.586a1 1 0 0 1 1.414 0l1.586 1.586a1 1 0 0 1 0 1.414z" />
+        <path d="m18 13-1.375-6.874a1 1 0 0 0-.746-.776L3.235 2.028a1 1 0 0 0-1.207 1.207L5.35 15.879a1 1 0 0 0 .776.746L13 18" />
+        <path d="m2.3 2.3 7.286 7.286" />
+        <circle cx="11" cy="11" r="2" />
+      </svg>
+    )
+  },
+  {
+    title: "AI Carousel Generator",
+    text: "Create engaging posts with AI post generator!",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-gallery-horizontal-end w-5 h-5"
+      >
+        <path d="M2 7v10" />
+        <path d="M6 5v14" />
+        <rect width="12" height="18" x="10" y="3" rx="2" />
+      </svg>
+    )
+  },
+  {
+    title: "AI PDF Reader",
+    text: "Make PDF reading a breeze with Nily AI PDF Summarizer!",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-file-text w-5 h-5"
+      >
+        <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+        <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+        <path d="M10 9H8" />
+        <path d="M16 13H8" />
+        <path d="M16 17H8" />
+      </svg>
+    )
+  },
+  {
+    title: "AI Image Generator",
+    text: "Create any image with a simple prompt!",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-image w-5 h-5"
+      >
+        <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+        <circle cx="9" cy="9" r="2" />
+        <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
+      </svg>
+    )
+  },
+  {
+    title: "Compare LLMs",
+    text: "Extract any information from a YouTube video in seconds!",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-youtube w-5 h-5"
+      >
+        <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
+        <path d="m10 15 5-3-5-3z" />
+      </svg>
+    )
+  }
+];
+
 let sectionsInfo = [
   {
     id: 1,
@@ -1278,4 +1498,4 @@ let questions = [
   }
 ];
 
-export { cards, buttons, sectionsInfo, questions };
+export { solutions, infoBoxes, buttons, cards, sectionsInfo, questions };

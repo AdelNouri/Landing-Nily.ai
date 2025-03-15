@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import { solutions } from "../../arrays/Arrays.jsx"
 
 const Section2 = () => {
   const [title, setTitle] = useState("aiSdebar");
@@ -40,45 +41,9 @@ const Section2 = () => {
     [flag]
   );
 
-  const returnELM = () => {
-    let options = [
-      {
-        title: "aiSdebar",
-        img: "../../public/assets/gif/main-page/ai-sidebar.gif",
-        text:
-          "Access 20+ advanced AI assistants in one convenient platform,allowing you to chat, code, write, read, summarize, perform OCR,and translate web pages!"
-      },
-      {
-        title: "llmComparison",
-        img: "../../public/assets/gif/main-page/llm-compare.gif",
-        text:
-          " Access and compare LLMs like DeepSeek R1, Chat GPT 4o, Perplexity,Gemini 1.5 Pro, Claude 3.5, Sonnet, Mistral Large, Llama 3.1, and 20+ more AI Assistant models all in one place!"
-      },
-      {
-        title: "aiEmailWriter",
-        img: "../../public/assets/gif/AI-email-assistant/2.png",
-        text:
-          "Write and reply to emails 10x faster in any language using your personalized knowledge base!"
-      },
-      {
-        title: "aiPdfReader",
-        img: "../../public/assets/gif/main-page/pdf-reader.gif",
-        text: "With AI PDF Summarizer. easily analyze, summarize, and interact with any PDF!"
-      },
-      {
-        title: "aiWritingAssistant",
-        img: "../../public/assets/gif/main-page/writing-assisstant.gif",
-        text: "Generate content and ideas, write, research, optimize, correct grammar, tone, and much more 10x faster!"
-      },
-      {
-        title: "aiImageGenerator",
-        img: "../../public/assets/gif/main-page/image-generator.gif",
-        text: "Create unique and captivating images, illustrations, and designs with ease!"
-      }
-    ];
-
-    for (let i = 0; i < options.length; i++) {
-      if (title == options[i].title) {
+  const rtnSolutions = () => {
+    for (let i = 0; i < solutions.length; i++) {
+      if (title == solutions[i].title) {
         return (
           <div className="flex justify-center mt-11">
             <div className="w-11/12 sm:w-150 md:w-175 lg:w-225" key={title}>
@@ -90,7 +55,7 @@ const Section2 = () => {
                 className="text-gray-500 px-3"
               >
                 <p>
-                  {options[i].text}
+                  {solutions[i].text}
                 </p>
               </motion.div>
               <motion.div
@@ -101,7 +66,7 @@ const Section2 = () => {
               >
                 <div className="flex justify-center border-2 border-[#FC6423] rounded-xl mt-8">
                   <img
-                    src={options[i].img}
+                    src={solutions[i].img}
                     className="w-full rounded-xl"
                   />
                 </div>
@@ -351,7 +316,7 @@ const Section2 = () => {
                 </div>
               </motion.div>
 
-              {returnELM()}
+              {rtnSolutions()}
             </div>
           </div>
         </div>

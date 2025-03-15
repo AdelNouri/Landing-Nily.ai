@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
-import { cards, buttons } from "../../arrays/Arrays.jsx";
+import { infoBoxes, buttons } from "../../arrays/Arrays.jsx";
 
 
 const Section3 = () => {
   const [identificationCode, setIdentificationCode] = useState(0);
   const [executions, setExecutions] = useState(true);
   const [flag, setFlag] = useState(false);
+
 
   useEffect(
     () => {
@@ -62,7 +63,7 @@ const Section3 = () => {
     [identificationCode]
   );
 
-  const developer = (card, index) => {
+  const developer = (infoBox, index) => {
     return (
       <motion.div
         initial={{ opacity: 0, y: 40 }}
@@ -74,10 +75,17 @@ const Section3 = () => {
         <div className="flex justify-center mt-8">
           <div className="bg-white w-full mx-4 sm:w-[608px] md:w-[736px] lg:w-[992px] xl:w-[1248px] 2xl:w-[1504px] py-8 px-9 rounded-lg shadow-xl">
             <p className="font-semibold text-2xl text-gray-800 flex justify-start">
-              {card.title}
+              {infoBox.title}
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-5 mt-8">
-              {card.sections.map((section, index) =>
+              {infoBox.sections.map((section, index) =>
+              <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              viewport={{ once: true, amount: 0.2 }}
+              key={index - 1}
+            >
                 <div className="flex justify-center" key={index}>
                   <div className="flex justify-center items-center p-3 bg-[#F4F1ED] h-12 rounded-md">
                     {section.icon}
@@ -91,6 +99,7 @@ const Section3 = () => {
                     </p>
                   </div>
                 </div>
+                </motion.div>
               )}
             </div>
           </div>
@@ -156,8 +165,8 @@ const Section3 = () => {
                 {buttons.map((button, index) => rtnButtons(button, index))}
               </div>
             </motion.div>
-            {cards.map(
-              (card, index) => (index == identificationCode ? developer(card, index) : null)
+            {infoBoxes.map(
+              (infoBox, index) => (index == identificationCode ? developer(infoBox, index) : null)
             )}
           </div>
         </div>
