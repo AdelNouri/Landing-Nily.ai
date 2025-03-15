@@ -4,12 +4,12 @@ const Section8 = () => {
       <div
         className="absolute inset-0"
         style={{
-          background: "#053133", // رنگ پس‌زمینه
+          background: "#053133",
           backgroundImage:
-            "linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px)", // خطوط شطرنجی با شفافیت کاهش یافته
-          backgroundSize: "32px 32px", // اندازه هر خانه شطرنجی
-          width: "100%", // اندازه عرض به اندازه المان
-          height: "100%", // اندازه ارتفاع به اندازه المان
+            "linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px)", 
+          backgroundSize: "32px 32px", 
+          width: "100%",
+          height: "100%",
         }}
       />
       <div
@@ -20,12 +20,12 @@ const Section8 = () => {
         }}
       />
       <div
-        className="relative z-10" // این عنصر در بالای پس‌زمینه قرار می‌گیرد
+        className="relative z-10" 
         style={{
-          padding: "30px 0 50px 0", // اندازه padding برای قرار دادن محتویات داخل
-          borderRadius: "8px", // برای گرد کردن گوشه‌ها
-          width: "auto", // عرض را به اندازه محتوای داخلی تنظیم می‌کند
-          height: "auto", // ارتفاع را به اندازه محتوای داخلی تنظیم می‌کند
+          padding: "30px 0 50px 0", 
+          borderRadius: "8px",
+          width: "auto", 
+          height: "auto", 
         }}
       >
         <div className="text-white font-bold text-4xl" style={{fontSize: '48px'}}>
