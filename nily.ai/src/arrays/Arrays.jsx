@@ -1460,6 +1460,46 @@ let sectionsInfo = [
   }
 ];
 
+let comments = [
+  {
+    name: "marcelon costello",
+    commentText: "Easy to use and very effective.",
+    profile:
+      "https://lh3.googleusercontent.com/a/ACg8ocL5-b-fO-kGcoDt2WlBNVZpe0JX6HkpOcwpJi1K5RayXl5-ig=s48-w48-h48"
+  },
+  {
+    name: "Md Monirul Islam",
+    commentText: "Perfect",
+    profile:
+      "https://lh3.googleusercontent.com/a-/ALV-UjWCgUl_XqIHcXVqwTL5k76vM9EqO5SAIZ2J5mWyWC83LZ-dffDA=s48-w48-h48"
+  },
+  {
+    name: "Natascha",
+    commentText: "Works great!",
+    profile:
+      "https://lh3.googleusercontent.com/a/ACg8ocKVLRQ6FNOEkWAn3p9-F-FvpSN7DbNoWlOr-yqUIbMm27Axrg=s48-w48-h48"
+  },
+  {
+    name: "Shahrzad Ramtinfard",
+    commentText: "very good",
+    profile:
+      "https://lh3.googleusercontent.com/a-/ALV-UjUbNUFpoo4JRUO0_tMZXphY7b39mSx1fJ-xsHAXcquA_BGi6Cv1=s48-w48-h48"
+  },
+  {
+    name: "shelrai boltem",
+    commentText:
+      "The AI suggestions are usually spot-on. Makes my job much easier.",
+    profile:
+      "https://lh3.googleusercontent.com/a-/ALV-UjX6F8AceyGIzra0M-wXH1umjQcRgn-xdsYGJsRgha7xj7IzFqc=s48-w48-h48"
+  },
+  {
+    name: "Bernadette Cobb",
+    commentText: "Excellent extension. Saves me a lot of time daily.",
+    profile:
+      "https://lh3.googleusercontent.com/a-/ALV-UjXPIFuxYWRiIE9VYpX78uWHzU_33S8jYHCymtxpfEuYEc6WDuk=s48-w48-h48"
+  }
+];
+
 let questions = [
   {
     id: 1,
@@ -1498,4 +1538,12 @@ let questions = [
   }
 ];
 
-export { solutions, infoBoxes, buttons, cards, sectionsInfo, questions };
+export {
+  solutions,
+  infoBoxes,
+  buttons,
+  cards,
+  sectionsInfo,
+  comments,
+  questions
+};
