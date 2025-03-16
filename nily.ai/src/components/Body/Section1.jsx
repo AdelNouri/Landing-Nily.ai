@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const Section1 = () => {
     return (
-        <>
+      <>
         <div className="flex justify-center">
               <motion.div
                 initial={{ opacity: 0, y: 25 }}
@@ -202,7 +202,7 @@ const Section1 = () => {
                 </div>
               </motion.div>
             </div>
-            </>
+        </>
     )
 }
 

@@ -32,7 +32,7 @@ const Section8 = () => {
           <p>Get Started with</p>
           <p>Nily AI Now!</p>
         </div>
-        <div className="flex flex-wrap justify-center items-center mt-4 h-10">
+        <div className="flex flex-wrap justify-center gap-x-2 sm:gap-x-0 items-center mt-4 h-10">
           <div className="mt-3 text-white font-bold bg-[#FC6423] py-3.5 w-35.5 rounded-full sm:mr-4.25 hover:scale-112 transition ease-out duration-300">
             <button>Get Started</button>
           </div>

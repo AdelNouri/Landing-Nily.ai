@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import Section5 from "./Section5";
 
 const Card1 = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });

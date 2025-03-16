@@ -4,28 +4,27 @@ const Section7 = () => {
   const rtnComments = (comment, index) => {
     return (
       <div className="bg-[#F4F1ED] p-6 rounded-lg" key={index}>
-              <div className="flex justify-start gap-3">
-                <img
-                  className="rounded-full"
-                  src={comment.profile}
-                />
-                <div>
-                  <p className="font-semibold text-black">{comment.name}</p>
-                  <div className="flex justify-start gap-1">
-                    <i className="fas fa-star text-sm text-[#DE7932]" />
-                    <i className="fas fa-star text-sm text-[#DE7932]" />
-                    <i className="fas fa-star text-sm text-[#DE7932]" />
-                    <i className="fas fa-star text-sm text-[#DE7932]" />
-                    <i className="fas fa-star text-sm text-[#DE7932]" />
-                  </div>
-                </div>
-              </div>
-              <p class="text-[#6C6C6C] text-left text-sm flex justify-start mt-3">
-              {comment.commentText}
-              </p>
+        <div className="flex justify-start gap-3">
+          <img className="rounded-full" src={comment.profile} />
+          <div>
+            <p className="font-semibold text-black">
+              {comment.name}
+            </p>
+            <div className="flex justify-start gap-1">
+              <i className="fas fa-star text-sm text-[#DE7932]" />
+              <i className="fas fa-star text-sm text-[#DE7932]" />
+              <i className="fas fa-star text-sm text-[#DE7932]" />
+              <i className="fas fa-star text-sm text-[#DE7932]" />
+              <i className="fas fa-star text-sm text-[#DE7932]" />
             </div>
-    )
-  }
+          </div>
+        </div>
+        <p class="text-[#6C6C6C] text-left text-sm flex justify-start mt-3">
+          {comment.commentText}
+        </p>
+      </div>
+    );
+  };
 
   return (
     <div className="bg-white py-20 flex justify-center">
@@ -110,8 +109,8 @@ const Section7 = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true, amount: 0.2 }}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-15 gap-6 w-[638px] md:w-[736px] lg:w-[1024px] xl:w-[1152px]"
-          >          
-            {comments.map((comment, index) => (rtnComments(comment, index)))}
+          >
+            {comments.map((comment, index) => rtnComments(comment, index))}
           </motion.div>
         </div>
       </div>

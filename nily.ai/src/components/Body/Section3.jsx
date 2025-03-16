@@ -63,7 +63,7 @@ const Section3 = () => {
     [identificationCode]
   );
 
-  const developer = (infoBox, index) => {
+  const rtnInfobox = (infoBox, index) => {
     return (
       <motion.div
         initial={{ opacity: 0, y: 40 }}
@@ -115,6 +115,7 @@ const Section3 = () => {
       setExecutions(false);
     }, 1);
   }
+
   const rtnButtons = (button, index) => {
     return (
       <div
@@ -166,7 +167,7 @@ const Section3 = () => {
               </div>
             </motion.div>
             {infoBoxes.map(
-              (infoBox, index) => (index == identificationCode ? developer(infoBox, index) : null)
+              (infoBox, index) => (index == identificationCode ? rtnInfobox(infoBox, index) : null)
             )}
           </div>
         </div>
